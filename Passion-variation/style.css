@@ -1,24 +1,31 @@
-body {
-    background-color: #f2f2f2;
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 40px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Passion Project Variation</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
 
-h1 {
-    color: #222;
-    letter-spacing: 2px;
-}
+<body>
 
-p {
-    max-width: 500px;
-    line-height: 1.5;
-}
+  <h1>My Passion</h1>
 
-img {
-    margin-top: 20px;
-    border: 3px solid black;
-}
+  <p>
+    This page is about something I love. I will update it during the semester.
+  </p>
 
-ul {
-    margin-top: 20px;
-}
+  <img
+    src="https://placehold.co/400x250"
+    alt="passion image"
+  >
+
+  <ul>
+    <li>Reason 1</li>
+    <li>Reason 2</li>
+    <li>Reason 3</li>
+  </ul>
+
+  <a href="../index.html">Back to Homepage</a>
+
+</body>
+</html>
