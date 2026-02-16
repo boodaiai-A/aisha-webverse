@@ -1,93 +1,57 @@
-body {
+/* Passion-variation/style2.css */
+body{
   background-color: black;
   color: white;
   font-family: Georgia, serif;
-  margin: 0;
-  padding: 60px 20px;
+  margin: 80px;
 }
 
-.card {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-h1 {
+h1{
   color: hotpink;
   letter-spacing: 6px;
   text-transform: uppercase;
-  margin: 0 0 10px 0;
 }
 
-.intro {
-  max-width: 700px;
+p{
+  max-width: 600px;
   line-height: 1.8;
   font-style: italic;
-  margin: 0 0 30px 0;
 }
 
-.layout {
+.content{
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: flex-start;
+  margin-top: 20px;
 }
 
-.photo {
-  margin: 0;
-  flex: 0 0 420px;
-}
-
-.photo img {
-  width: 100%;
-  height: auto;
+img{
   display: block;
-  border: 5px dashed hotpink;
+  width: 320px;          /* change this if you want bigger/smaller */
+  max-width: 100%;
+  height: auto;
+  border: 6px dashed hotpink;
+  padding: 6px;
 }
 
-.photo figcaption {
+figcaption{
   margin-top: 10px;
-  font-style: italic;
-  opacity: 0.9;
+  font-size: 12px;
+  color: lightgray;
 }
 
-.content {
-  flex: 1;
-  min-width: 260px;
+h2{
+  margin-top: 0;
 }
 
-h2 {
-  margin: 0 0 12px 0;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-ul {
-  margin: 0 0 18px 18px;
+ul{
   line-height: 1.8;
   font-style: italic;
 }
 
-a {
-  color: cyan;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.back {
+.back{
   display: inline-block;
-  margin-top: 8px;
-}
-
-/* Mobile: stack image above text */
-@media (max-width: 850px) {
-  .layout {
-    flex-direction: column;
-  }
-
-  .photo {
-    flex: 0 0 auto;
-    max-width: 520px;
-  }
+  margin-top: 16px;
+  color: turquoise;
+  text-decoration: underline;
 }
