@@ -1,7 +1,10 @@
-My Passion
-This page is about something I love. I will update it during the semester.
-
-	•	Reason 1
-	•	Reason 2
-	•	Reason 3
-Back to Homepage
+/* Passion-variation/style.css (optional old file)
+   If your project still has style.css but you’re not using it,
+   you can leave it empty or delete it. If you want it to match, paste this:
+*/
+body{
+  background-color: black;
+  color: white;
+  font-family: Georgia, serif;
+  margin: 80px;
+}
