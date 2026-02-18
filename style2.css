@@ -5,57 +5,31 @@
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 body \{\
-  background-color: black;\
-  color: white;\
-  font-family: Georgia, serif;\
-  margin: 80px;\
+\f0\fs24 \cf0 body\{\
+  background-color:black;\
+  color:white;\
+  font-family:Georgia, serif;\
+  margin:80px;\
 \}\
 \
-h1 \{\
-  color: hotpink;\
-  letter-spacing: 6px;\
-  text-transform: uppercase;\
+h1\{\
+  color:hotpink;\
+  letter-spacing:6px;\
+  text-transform:uppercase;\
 \}\
 \
-p \{\
-  color: #dddddd;\
+p\{\
+  color:#dddddd;\
+  font-style:italic;\
+  line-height:1.8;\
+  max-width:700px;\
 \}\
 \
-.container \{\
-  display: flex;\
-  gap: 40px;\
-  align-items: flex-start;\
-  margin-top: 30px;\
+a\{\
+  color:cyan;\
+  text-decoration:none;\
 \}\
-\
-.image-section img \{\
-  width: 300px;\
-  height: auto;\
-  border: 4px dashed hotpink;\
-  display: block;\
-\}\
-\
-.caption \{\
-  font-size: 12px;\
-  margin-top: 6px;\
-  color: #aaa;\
-\}\
-\
-.text-section \{\
-  max-width: 400px;\
-\}\
-\
-h2 \{\
-  margin-top: 0;\
-\}\
-\
-ul \{\
-  line-height: 1.6;\
-\}\
-\
-a \{\
-  color: cyan;\
-  text-decoration: none;\
+a:hover\{\
+  text-decoration:underline;\
 \}\
 }
