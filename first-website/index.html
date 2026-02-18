@@ -4,58 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My First Website</title>
-
-  <!-- Favicon is in the ROOT folder -->
   <link rel="icon" type="image/png" href="../favicon.png" />
-
-  <!-- IMPORTANT: this must match the file name inside first-website folder -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <main class="wrap">
-    <header class="hero">
+  <main class="page">
+    <header class="top">
       <h1>My First Website</h1>
-      <p class="tagline">A small page that shows what I’m learning and what I like to build.</p>
-      <p><a class="back" href="../index.html">← Back to Homepage</a></p>
+      <p class="subtitle">A small page that shows what I’m learning and what I like to build.</p>
+
+      <p class="back">
+        <a href="../index.html">← Back to Homepage</a>
+      </p>
     </header>
 
     <section class="grid">
-      <figure class="photo">
-        <!-- Your screenshot shows simba.jpg exists in this folder -->
-        <img src="simba.jpg" alt="Simba standing by the ocean" />
+      <figure class="photo-card">
+        <img src="simba.jpg" alt="Simba standing near the ocean" />
         <figcaption>Simba (my favorite model)</figcaption>
       </figure>
 
-      <article class="card">
+      <section class="text-card">
         <h2>What I’m practicing</h2>
+
         <p>
-          This is my first website page. I’m practicing HTML structure, links, images, and layout.
-          I want my pages to feel simple but designed — not random.
+          This is my first website page. I’m learning HTML and CSS, so I used a photo of Simba to make it feel more “me.”
+          I’m practicing how to keep the layout clean and readable.
         </p>
 
         <ul>
-          <li>Headings + paragraphs that make a clear hierarchy</li>
-          <li>Links that connect pages like a small website world</li>
-          <li>Images with captions</li>
-          <li>CSS for background, spacing, and readable typography</li>
+          <li>Headings + paragraphs (so it doesn’t look messy)</li>
+          <li>Links that take you back and forth between pages</li>
+          <li>Images with a simple caption</li>
+          <li>CSS styling (background, spacing, borders)</li>
         </ul>
 
         <p class="note">
-          Next, I want to make this page feel more like a “place” instead of a document — with better spacing,
-          stronger type, and a clear mood.
+          Next I want to add more content and make the page look even more like a real website.
         </p>
 
         <p class="small">
-          HTML reference I’m using:
+          Reference:
           <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools HTML</a>
         </p>
-      </article>
+      </section>
     </section>
-
-    <footer class="footer">
-      <p class="small muted">Made by Aisha • Handmade Web</p>
-    </footer>
   </main>
 </body>
 </html>
