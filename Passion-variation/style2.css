@@ -1,52 +1,37 @@
 body{
-background-color:black;
+background:black;
 color:white;
-font-family:Georgia,serif;
-margin:80px;
+font-family:Georgia, serif;
+margin:60px;
 }
 
 h1{
-color:hotpink;
-letter-spacing:6px;
-text-transform:uppercase;
+color:#ff6fb5;
+letter-spacing:3px;
 }
 
-p{
-color:#dddddd;
-}
-
-.container{
+.layout{
 display:flex;
-gap:40px;
+gap:60px;
 align-items:flex-start;
-margin-top:30px;
+margin-top:40px;
 }
 
-.image-section figure{
-margin:0;
-}
-
-.image-section img{
-width:300px;
-border:4px dashed hotpink;
-}
-
-.image-section figcaption{
-font-size:12px;
-color:#bbbbbb;
-margin-top:6px;
+.image-box img{
+width:260px;
+border:3px dashed #ff6fb5;
+padding:8px;
 }
 
 .text-box{
-border:1px solid #444;
+border:1px solid #ff6fb5;
 padding:25px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(255,105,180,0.2);
+border-radius:12px;
 max-width:400px;
 }
 
 a{
-color:cyan;
+color:#8de3e3;
 text-decoration:none;
 }
 
