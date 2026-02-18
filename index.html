@@ -1,61 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aisha Webverse</title>
-
-  <!-- Favicon (file is in the ROOT aisha-webverse folder) -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-
-  <!-- Main homepage CSS -->
-  <link rel="stylesheet" href="style2.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Structure Project</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main class="wrap">
-    <header class="hero">
-      <h1 class="title">AISHA WEBVERSE</h1>
-      <p class="subtitle"><em>A homepage for my web projects.</em></p>
-    </header>
 
-    <section class="panel">
-      <h2>About Me</h2>
-      <p>I am a graphic design student exploring creative coding and personal storytelling through web design.</p>
-    </section>
+<h1>Structure & Space</h1>
+<p>This is my box model and positioning practice page.</p>
 
-    <section class="panel">
-      <h2>Assignments</h2>
-      <ul>
-        <li>
-          <a href="first-website/index.html">First Website</a>
-        </li>
-        <li>
-          <a href="Passion/index.html">Passion Project: Dogs (Simba)</a>
-          <!-- If your Passion page file name is NOT index.html, change to:
-               Passion/passion.html   OR whatever your file is named -->
-        </li>
-        <li>
-          <a href="Passion-variation/index.html">Passion Project (Variation): Dogs (Simba)</a>
-        </li>
-        <li>
-          <span class="muted">Structure (and space...) — coming soon</span>
-        </li>
-      </ul>
-    </section>
+<div class="container">
+  <div class="box">Box One</div>
+  <div class="box">Box Two</div>
+  <div class="box">Box Three</div>
+</div>
 
-    <section class="panel">
-      <h2>Quick Notes</h2>
-      <p>This site will grow over the semester as we add more projects.</p>
-    </section>
-
-    <footer class="footer">
-      <p class="tiny muted">© <span id="year"></span> Aisha</p>
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
