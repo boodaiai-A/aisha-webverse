@@ -1,28 +1,97 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: Georgia, serif;
-    margin: 80px;
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Georgia, serif;
 }
 
-h1 {
-    color: hotpink;
-    letter-spacing: 6px;
-    text-transform: uppercase;
+.wrap {
+  max-width: 980px;
+  margin: 70px auto;
+  padding: 0 22px;
 }
 
-p {
-    color: #dddddd;
+.title {
+  margin: 0 0 10px 0;
+  color: hotpink;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.sub {
+  margin: 0 0 26px 0;
+  color: #d7d7d7;
+}
+
+.top {
+  margin-bottom: 22px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 18px 18px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+  margin: 14px 0;
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+
+.card h3 {
+  margin: 16px 0 8px 0;
+  font-size: 18px;
+}
+
+.grid {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin-top: 18px;
+}
+
+.photo {
+  margin: 0;
+  width: 320px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border: 4px dashed hotpink;
+  display: block;
+}
+
+.photo figcaption {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #bdbdbd;
+}
+
+ul {
+  line-height: 1.7;
+  margin: 0 0 14px 18px;
 }
 
 a {
-    color: cyan;
-    text-decoration: none;
+  color: cyan;
+  text-decoration: none;
 }
 
-.box {
-    border: 1px solid #444;
-    border-radius: 12px;
-    padding: 20px;
-    margin-top: 20px;
+a:hover {
+  text-decoration: underline;
+}
+
+.links {
+  margin-left: 18px;
+}
+
+.quiet {
+  color: #cfcfcf;
+  font-style: italic;
+  margin-top: 10px;
 }
