@@ -1,62 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My First Website</title>
 
-  <!-- Favicon lives one level UP (in the root folder) -->
-  <link rel="icon" type="image/png" href="../favicon.png" />
+  <!-- favicon (one folder up) -->
+  <link rel="icon" type="image/png" href="../favicon.png">
 
-  <link rel="stylesheet" href="first-style.css" />
+  <!-- use your main homepage CSS -->
+  <link rel="stylesheet" href="../style2.css">
 </head>
 
 <body>
-  <main class="wrap">
-    <header class="hero">
-      <h1 class="title">My First Website</h1>
-      <p class="subtitle">A small page that shows what I’m learning and what I like to build.</p>
-      <p class="back"><a href="../index.html">← Back to Homepage</a></p>
-    </header>
 
-    <section class="grid">
-      <figure class="photo">
-        <!-- You can change this to any image you want in first-website folder -->
-        <img src="simba.jpg" alt="Simba relaxing" />
-        <figcaption>Simba (my favorite model)</figcaption>
-      </figure>
+  <h1>My First Website</h1>
 
-      <section class="card">
-        <h2>What I’m practicing</h2>
-        <p>
-          This is my first website page. I’m practicing HTML structure, links, images, and layout.
-          I want my pages to feel simple but designed — not random.
-        </p>
+  <p>This is my first website page. I am practicing HTML structure and layout.</p>
 
-        <h3>3 things I learned so far</h3>
-        <ul>
-          <li>Small spacing changes can make a page look “real.”</li>
-          <li>Typography (font + size + line-height) matters more than I thought.</li>
-          <li>Organizing files correctly fixes most broken links.</li>
-        </ul>
+  <img src="simba.jpg" alt="Simba standing near the ocean" width="300">
 
-        <!-- “HTML element we didn’t cover” idea: details/summary -->
-        <details class="details">
-          <summary>One thing I want to improve next</summary>
-          <p>
-            I want to make a stronger “structure and space” concept using layout (flexbox/grid)
-            so each page feels like a place you can move through.
-          </p>
-        </details>
+  <p>
+    I made this page while learning how to build simple web pages using HTML.
+    It is not meant to be perfect — it shows my learning process.
+  </p>
 
-        <p class="linkline">
-          Reference I used:
-          <a href="https://www.w3schools.com/tags/default.asp" target="_blank" rel="noopener noreferrer">
-            W3Schools HTML Reference
-          </a>
-        </p>
-      </section>
-    </section>
-  </main>
+  <ul>
+    <li>Practicing headings and paragraphs</li>
+    <li>Learning how to add images</li>
+    <li>Understanding page structure</li>
+  </ul>
+
+  <p>
+    <a href="../index.html">Back to Homepage</a>
+  </p>
+
 </body>
 </html>
