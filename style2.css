@@ -1,27 +1,51 @@
 body{
-background-color:black;
-color:white;
-font-family:Georgia,serif;
-margin:80px;
+background:#050505;
+color:#f2f2f2;
+font-family:Georgia, serif;
+margin:0;
 }
 
-h1{
+.wrap{
+max-width:860px;
+margin:60px auto;
+padding:0 22px;
+}
+
+.header h1{
+margin:0 0 10px 0;
 color:hotpink;
 letter-spacing:6px;
 text-transform:uppercase;
 }
 
-p{
-color:#dddddd;
+.subtitle{
+margin:0;
+color:#d9d9d9;
+font-style:italic;
 }
 
 .card{
-border:1px solid #444;
-padding:25px;
-margin-top:25px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(255,105,180,0.2);
-max-width:500px;
+margin-top:18px;
+padding:18px 18px 16px;
+border:1px solid rgba(255,255,255,0.18);
+border-radius:12px;
+background:rgba(255,255,255,0.03);
+}
+
+h2{
+margin:0 0 10px 0;
+font-size:22px;
+}
+
+p{
+margin:0;
+line-height:1.6;
+color:#dddddd;
+}
+
+.links{
+margin:8px 0 0 18px;
+line-height:1.7;
 }
 
 a{
@@ -31,4 +55,8 @@ text-decoration:none;
 
 a:hover{
 text-decoration:underline;
+}
+
+.muted{
+color:#bdbdbd;
 }
