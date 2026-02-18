@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My First Website</title>
 
-  <!-- favicon (one folder up) -->
-  <link rel="icon" type="image/png" href="../favicon.png">
+  <!-- Favicon is in the ROOT folder -->
+  <link rel="icon" type="image/png" href="../favicon.png" />
 
-  <!-- use your main homepage CSS -->
-  <link rel="stylesheet" href="../style2.css">
+  <!-- IMPORTANT: this must match the file name inside first-website folder -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>My First Website</h1>
+      <p class="tagline">A small page that shows what I’m learning and what I like to build.</p>
+      <p><a class="back" href="../index.html">← Back to Homepage</a></p>
+    </header>
 
-  <h1>My First Website</h1>
+    <section class="grid">
+      <figure class="photo">
+        <!-- Your screenshot shows simba.jpg exists in this folder -->
+        <img src="simba.jpg" alt="Simba standing by the ocean" />
+        <figcaption>Simba (my favorite model)</figcaption>
+      </figure>
 
-  <p>This is my first website page. I am practicing HTML structure and layout.</p>
+      <article class="card">
+        <h2>What I’m practicing</h2>
+        <p>
+          This is my first website page. I’m practicing HTML structure, links, images, and layout.
+          I want my pages to feel simple but designed — not random.
+        </p>
 
-  <img src="simba.jpg" alt="Simba standing near the ocean" width="300">
+        <ul>
+          <li>Headings + paragraphs that make a clear hierarchy</li>
+          <li>Links that connect pages like a small website world</li>
+          <li>Images with captions</li>
+          <li>CSS for background, spacing, and readable typography</li>
+        </ul>
 
-  <p>
-    I made this page while learning how to build simple web pages using HTML.
-    It is not meant to be perfect — it shows my learning process.
-  </p>
+        <p class="note">
+          Next, I want to make this page feel more like a “place” instead of a document — with better spacing,
+          stronger type, and a clear mood.
+        </p>
 
-  <ul>
-    <li>Practicing headings and paragraphs</li>
-    <li>Learning how to add images</li>
-    <li>Understanding page structure</li>
-  </ul>
+        <p class="small">
+          HTML reference I’m using:
+          <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools HTML</a>
+        </p>
+      </article>
+    </section>
 
-  <p>
-    <a href="../index.html">Back to Homepage</a>
-  </p>
-
+    <footer class="footer">
+      <p class="small muted">Made by Aisha • Handmade Web</p>
+    </footer>
+  </main>
 </body>
 </html>
