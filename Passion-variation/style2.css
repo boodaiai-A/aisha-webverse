@@ -5,19 +5,16 @@ body {
     margin: 80px;
 }
 
-/* Title */
 h1 {
     color: hotpink;
     letter-spacing: 6px;
     text-transform: uppercase;
 }
 
-/* Intro paragraph */
 p {
     color: #dddddd;
 }
 
-/* Main layout */
 .container {
     display: flex;
     gap: 40px;
@@ -25,9 +22,8 @@ p {
     margin-top: 30px;
 }
 
-/* Image side */
 .image-section img {
-    width: 300px;       /* controls Simba size */
+    width: 300px;
     height: auto;
     border: 4px dashed hotpink;
     display: block;
@@ -39,7 +35,6 @@ p {
     color: #aaa;
 }
 
-/* Text side */
 .text-section {
     max-width: 400px;
 }
@@ -52,7 +47,6 @@ ul {
     line-height: 1.6;
 }
 
-/* Link */
 a {
     color: cyan;
     text-decoration: none;
