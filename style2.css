@@ -1,81 +1,34 @@
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  background: #050505;
-  color: #e9e9e9;
-  font-family: Georgia, "Times New Roman", Times, serif;
+body{
+background-color:black;
+color:white;
+font-family:Georgia,serif;
+margin:80px;
 }
 
-.wrap {
-  width: min(920px, 92vw);
-  margin: 56px auto 80px;
+h1{
+color:hotpink;
+letter-spacing:6px;
+text-transform:uppercase;
 }
 
-.top {
-  margin-bottom: 22px;
+p{
+color:#dddddd;
 }
 
-.title {
-  margin: 0 0 8px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: #ff5aa9;
-  font-size: 44px;
+.card{
+border:1px solid #444;
+padding:25px;
+margin-top:25px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(255,105,180,0.2);
+max-width:500px;
 }
 
-.sub {
-  margin: 0;
-  opacity: 0.9;
+a{
+color:cyan;
+text-decoration:none;
 }
 
-.card {
-  margin-top: 18px;
-  padding: 18px 18px 16px;
-  border: 1px solid rgba(255,255,255,0.16);
-  border-radius: 10px;
-  background: rgba(255,255,255,0.03);
-  box-shadow: 0 0 18px rgba(0,0,0,0.45);
-}
-
-.card h2 {
-  margin: 0 0 10px;
-  font-size: 26px;
-}
-
-.card p {
-  margin: 0;
-  line-height: 1.5;
-  max-width: 62ch;
-}
-
-.links, .list {
-  margin: 8px 0 0 18px;
-}
-
-.links li, .list li {
-  margin: 6px 0;
-}
-
-a {
-  color: #41d7d7;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.details {
-  margin-top: 14px;
-}
-
-.details summary {
-  cursor: pointer;
-  color: #ffffff;
-  opacity: 0.9;
-}
-
-.details summary:hover {
-  opacity: 1;
+a:hover{
+text-decoration:underline;
 }
