@@ -1,38 +1,63 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: Georgia, serif;
-    margin: 60px;
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:#050505;
+  color:#f2f2f2;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-h1 {
-    color: #ff69b4;
-    font-size: 42px;
-    letter-spacing: 3px;
+.wrap{
+  width:min(900px, 92vw);
+  margin:60px auto;
 }
 
-.subtitle {
-    font-style: italic;
-    margin-bottom: 30px;
+/* ===== Header ===== */
+.site-title{
+  margin:0 0 6px;
+  font-size:56px;
+  letter-spacing:2px;
+  color:#ff5bbd;
+  text-transform:uppercase;
 }
 
-.box {
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 25px;
-    background-color: rgba(255,255,255,0.05);
+.site-subtitle{
+  margin:0 0 24px;
+  color:#e7d7df;
+  font-style:italic;
 }
 
-h2 {
-    margin-top: 0;
+/* ===== Cards ===== */
+.card{
+  margin:18px 0;
+  padding:18px 20px;
+  border:1px solid rgba(255, 91, 189, 0.45);
+  border-radius:10px;
+  background:rgba(255,255,255,0.06);
 }
 
-a {
-    color: #7fffd4;
-    text-decoration: none;
+.card h2{
+  margin:0 0 10px;
+  font-size:28px;
+  color:#f7efe8;
 }
 
-a:hover {
-    text-decoration: underline;
+.card p{
+  margin:0;
+  line-height:1.55;
+  color:#efe9e9;
 }
+
+/* ===== Links + list ===== */
+ul{ margin:10px 0 0 22px; }
+li{ margin:10px 0; }
+
+a{
+  color:#7cf1ff;
+  text-decoration:none;
+}
+a:hover{ text-decoration:underline; }
+
+.muted{ color:rgba(255,255,255,0.65); }
