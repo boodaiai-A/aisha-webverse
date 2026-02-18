@@ -1,52 +1,46 @@
 body {
-background-color: black;
-color: white;
-font-family: Georgia, serif;
-margin: 80px;
+    background-color: black;
+    color: white;
+    font-family: Georgia, serif;
+    margin: 40px;
 }
 
 h1 {
-color: hotpink;
-letter-spacing: 6px;
-text-transform: uppercase;
+    color: #ff69b4;
+    letter-spacing: 3px;
+    text-align: left;
+    font-size: 36px;
 }
 
 p {
-color: #dddddd;
+    line-height: 1.6;
+    color: #dddddd;
 }
 
 a {
-color: #66ffff;
-text-decoration: none;
+    color: #7fe7e7;
+    text-decoration: none;
 }
 
-.container {
-display: flex;
-gap: 40px;
-align-items: flex-start;
-margin-top: 30px;
+a:hover {
+    text-decoration: underline;
 }
 
-.image-section img {
-width: 300px;
-height: auto;
-border: 4px dashed hotpink;
-}
-
-.card {
-border: 1px solid #555;
-border-radius: 10px;
-padding: 20px;
-max-width: 420px;
-background-color: rgba(255,255,255,0.05);
+section {
+    border: 1px solid #444;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
 ul {
-margin-left: 20px;
+    list-style: square;
 }
 
-figcaption {
-font-size: 12px;
-color: #bbbbbb;
-margin-top: 5px;
+img {
+    width: 300px;
+    border: 3px dashed #ff69b4;
+    padding: 5px;
+    filter: contrast(105%);
 }
