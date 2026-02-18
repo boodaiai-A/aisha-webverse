@@ -1,53 +1,59 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: Georgia, serif;
-    margin: 80px;
+  background-color: black;
+  color: white;
+  font-family: Georgia, serif;
+  margin: 80px;
 }
 
 h1 {
-    color: hotpink;
-    letter-spacing: 6px;
-    text-transform: uppercase;
+  color: hotpink;
+  letter-spacing: 6px;
+  text-transform: uppercase;
 }
 
 p {
-    color: #dddddd;
-}
-
-.container {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    margin-top: 30px;
-}
-
-.image-section img {
-    width: 300px;
-    height: auto;
-    border: 4px dashed hotpink;
-    display: block;
-}
-
-.caption {
-    font-size: 12px;
-    margin-top: 6px;
-    color: #aaa;
-}
-
-.text-section {
-    max-width: 400px;
+  color: #dddddd;
 }
 
 h2 {
-    margin-top: 0;
+  color: white;
+  font-size: 22px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.image-section img {
+  width: 300px;
+  height: auto;
+  border: 4px dashed hotpink;
+  display: block;
+}
+
+.caption {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #aaa;
+}
+
+.text-section {
+  max-width: 400px;
 }
 
 ul {
-    line-height: 1.6;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
 a {
-    color: cyan;
-    text-decoration: none;
+  color: cyan;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
 }
