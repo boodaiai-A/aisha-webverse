@@ -1,41 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Structure & Space</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Structure & Space — Simba Story</title>
+  <link rel="stylesheet" href="structure.css" />
 </head>
 <body>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="back" href="../index.html">← Home</a>
+      <div class="badge">Structure project</div>
+    </div>
 
-<div class="wrap">
-<a class="small-link" href="../index.html">← Home</a>
+    <h1>Structure &amp; Space</h1>
+    <p class="subtitle">Simba’s Butterfly Story — click through the spaces.</p>
 
-<h1>Structure & Space</h1>
-<p class="subtitle">Simba’s Butterfly Story</p>
+    <div class="card">
+      <h2>Concept</h2>
+      <p>
+        I made a small clickable story. Each page is a “space” Simba moves through.
+        The layout changes to match the mood: curious → chaotic → calm.
+      </p>
+    </div>
 
-<div class="card">
-<h2>Concept</h2>
-<p>
-I used a short story about Simba to explore structure. Each page becomes a space in the story,
-and clicking moves forward like walking through different moments.
-</p>
+    <div class="card story" aria-label="Story map">
+      <div class="dotgrid"></div>
+      <div class="path"></div>
 
-<div class="start-row">
-<a class="btn" href="one.html">Start the story →</a>
-<a class="btn" href="../Passion/index.html">Back to Simba page</a>
-</div>
-</div>
+      <div class="line pink" style="left:120px; top:160px; width:520px;"></div>
+      <div class="line green" style="left:260px; top:250px; width:520px;"></div>
 
-<div class="card">
-<h2>How it works</h2>
-<p>
-Click the floating bubbles to move between scenes. The structure is simple and calm.
-</p>
-</div>
+      <div class="emoji" style="left:120px; top:135px;">🏠</div>
+      <div class="emoji" style="left:390px; top:220px;">🦋</div>
+      <div class="emoji" style="left:680px; top:140px;">🐶</div>
 
-<div class="footer">© 2026 Aisha</div>
-</div>
+      <a class="hotspot" href="one.html" style="left:90px; top:95px; width:210px;">
+        <span class="tag">START</span>&nbsp;&nbsp;Backyard
+      </a>
 
+      <a class="hotspot" href="two.html" style="left:365px; top:285px; width:250px;">
+        <span class="tag">MIDDLE</span>&nbsp;&nbsp;Uh oh moment
+      </a>
+
+      <a class="hotspot" href="three.html" style="left:650px; top:95px; width:240px;">
+        <span class="tag">END</span>&nbsp;&nbsp;Back to happy
+      </a>
+    </div>
+
+    <div class="footer">© 2026 Aisha</div>
+  </div>
 </body>
 </html>

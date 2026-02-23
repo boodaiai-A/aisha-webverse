@@ -1,0 +1,197 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 :root\{\
+  --bg: #07060a;\
+  --panel: rgba(255,255,255,0.06);\
+  --border: rgba(255,255,255,0.18);\
+  --text: rgba(255,255,255,0.92);\
+  --muted: rgba(255,255,255,0.68);\
+  --pink: #ff4fa3;\
+  --green: #98ff9f;\
+\}\
+\
+*\{box-sizing:border-box\}\
+\
+body\{\
+  margin:0;\
+  background:\
+    radial-gradient(900px 400px at 15% 10%, rgba(255,79,163,0.18), transparent 60%),\
+    radial-gradient(900px 500px at 85% 20%, rgba(152,255,159,0.12), transparent 60%),\
+    radial-gradient(900px 700px at 60% 85%, rgba(255,79,163,0.10), transparent 60%),\
+    var(--bg);\
+  color: var(--text);\
+  font-family: Georgia, "Times New Roman", Times, serif;\
+\}\
+\
+a\{color:inherit\}\
+a:hover\{opacity:0.9\}\
+\
+.wrap\{\
+  max-width: 980px;\
+  margin: 0 auto;\
+  padding: 42px 22px 70px;\
+\}\
+\
+.topbar\{\
+  display:flex;\
+  align-items:center;\
+  justify-content:space-between;\
+  gap:16px;\
+  margin-bottom: 18px;\
+\}\
+\
+.back\{\
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\
+  font-size: 14px;\
+  color: var(--green);\
+  text-decoration:none;\
+\}\
+\
+.badge\{\
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\
+  font-size: 12px;\
+  color: var(--muted);\
+  border: 1px solid var(--border);\
+  background: rgba(255,255,255,0.03);\
+  padding: 8px 10px;\
+  border-radius: 999px;\
+\}\
+\
+h1\{\
+  margin: 0 0 8px;\
+  font-size: 56px;\
+  letter-spacing: 1px;\
+  color: var(--pink);\
+  text-shadow: 0 0 10px rgba(255,79,163,0.45),\
+               0 0 26px rgba(255,79,163,0.25);\
+\}\
+\
+.subtitle\{\
+  margin: 0 0 26px;\
+  color: var(--muted);\
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\
+  font-size: 14px;\
+\}\
+\
+.card\{\
+  border: 1px solid var(--border);\
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));\
+  border-radius: 18px;\
+  padding: 20px 18px;\
+  box-shadow: 0 14px 40px rgba(0,0,0,0.35);\
+  margin: 18px 0;\
+\}\
+\
+.card h2\{\
+  margin: 0 0 10px;\
+  font-size: 24px;\
+  color: rgba(255,255,255,0.92);\
+\}\
+\
+.card p\{\
+  margin: 0;\
+  color: rgba(255,255,255,0.78);\
+  line-height: 1.55;\
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\
+  font-size: 14px;\
+\}\
+\
+.story\{\
+  position: relative;\
+  height: 440px;\
+  overflow: hidden;\
+\}\
+\
+.scene-title\{\
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\
+  font-size: 13px;\
+  color: var(--muted);\
+  margin-top: 6px;\
+\}\
+\
+.hotspot\{\
+  position:absolute;\
+  display:flex;\
+  align-items:center;\
+  justify-content:center;\
+  text-decoration:none;\
+  border: 1px solid var(--border);\
+  background: rgba(0,0,0,0.35);\
+  color: rgba(255,255,255,0.92);\
+  border-radius: 14px;\
+  padding: 12px 14px;\
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\
+  font-size: 14px;\
+  transition: transform 150ms ease, background 150ms ease;\
+\}\
+\
+.hotspot:hover\{\
+  transform: translateY(-2px);\
+  background: rgba(0,0,0,0.48);\
+\}\
+\
+.tag\{\
+  display:inline-block;\
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\
+  font-size: 11px;\
+  letter-spacing: 0.5px;\
+  padding: 6px 10px;\
+  border-radius: 999px;\
+  border: 1px solid var(--border);\
+  background: rgba(255,255,255,0.03);\
+  color: rgba(255,255,255,0.75);\
+\}\
+\
+.dotgrid\{\
+  position:absolute;\
+  inset:0;\
+  opacity:0.16;\
+  background-image:\
+    radial-gradient(rgba(255,255,255,0.32) 1px, transparent 1px);\
+  background-size: 22px 22px;\
+\}\
+\
+.path\{\
+  position:absolute;\
+  left: 80px;\
+  top: 90px;\
+  width: 720px;\
+  height: 280px;\
+  border-radius: 28px;\
+  border: 1px dashed rgba(255,255,255,0.18);\
+  transform: rotate(-6deg);\
+\}\
+\
+.line\{\
+  position:absolute;\
+  height: 6px;\
+  border-radius: 999px;\
+  opacity: 0.9;\
+  filter: blur(0.2px);\
+\}\
+\
+.line.pink\{\
+  background: linear-gradient(90deg, rgba(255,79,163,0.0), rgba(255,79,163,0.9), rgba(255,79,163,0.0));\
+\}\
+\
+.line.green\{\
+  background: linear-gradient(90deg, rgba(152,255,159,0.0), rgba(152,255,159,0.9), rgba(152,255,159,0.0));\
+\}\
+\
+.emoji\{\
+  position:absolute;\
+  font-size: 34px;\
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.55));\
+\}\
+\
+.footer\{\
+  margin-top: 26px;\
+  color: rgba(255,255,255,0.5);\
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\
+  font-size: 12px;\
+\}}
