@@ -1,128 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Structure & Space — Simba’s Walk Map</title>
-  <link rel="stylesheet" href="structure.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Structure & Space</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="top">
-    <a class="back" href="../index.html">← Home</a>
-    <h1>Structure &amp; Space</h1>
-    <p class="sub">Simba’s Walk Map (a structure exercise)</p>
-  </header>
 
-  <main class="wrap">
-    <section class="intro card">
-      <h2>Concept</h2>
-      <p>
-        I used Simba’s walk as a layout metaphor. The page is organized like a small path with stops.
-        The spacing and position show how you move through “zones” (home → outside → park → treats → nap).
-      </p>
-    </section>
+<div class="wrap">
+<a class="small-link" href="../index.html">← Home</a>
 
-    <section class="map card" aria-label="Simba walk map">
-      <div class="map-area">
-        <div class="trail t1"></div>
-        <div class="trail t2"></div>
-        <div class="trail t3"></div>
+<h1>Structure & Space</h1>
+<p class="subtitle">Simba’s Butterfly Story</p>
 
-        <a class="spot s1" href="#home">
-          <span class="tag">Start</span>
-          <span class="title">Home Base</span>
-          <span class="small">where Simba waits</span>
-        </a>
+<div class="card">
+<h2>Concept</h2>
+<p>
+I used a short story about Simba to explore structure. Each page becomes a space in the story,
+and clicking moves forward like walking through different moments.
+</p>
 
-        <a class="spot s2" href="#door">
-          <span class="tag">Step 1</span>
-          <span class="title">Leash + Door</span>
-          <span class="small">transition space</span>
-        </a>
+<div class="start-row">
+<a class="btn" href="one.html">Start the story →</a>
+<a class="btn" href="../Passion/index.html">Back to Simba page</a>
+</div>
+</div>
 
-        <a class="spot s3" href="#park">
-          <span class="tag">Step 2</span>
-          <span class="title">Dog Park</span>
-          <span class="small">open space</span>
-        </a>
+<div class="card">
+<h2>How it works</h2>
+<p>
+Click the floating bubbles to move between scenes. The structure is simple and calm.
+</p>
+</div>
 
-        <a class="spot s4" href="#treats">
-          <span class="tag">Bonus</span>
-          <span class="title">Treat Station</span>
-          <span class="small">reward moment</span>
-        </a>
+<div class="footer">© 2026 Aisha</div>
+</div>
 
-        <a class="spot s5" href="#nap">
-          <span class="tag">End</span>
-          <span class="title">Nap Corner</span>
-          <span class="small">quiet space</span>
-        </a>
-
-        <div class="paw p1">🐾</div>
-        <div class="paw p2">🐾</div>
-        <div class="paw p3">🐾</div>
-        <div class="paw p4">🐾</div>
-        <div class="paw p5">🐾</div>
-        <div class="paw p6">🐾</div>
-      </div>
-
-      <p class="hint">
-        Tip: hover the stops. The “trail” shows how I want the viewer to move through the page.
-      </p>
-    </section>
-
-    <section class="notes card">
-      <h2>Quick Notes</h2>
-      <ul>
-        <li>I used absolute positioning inside the map area to control space.</li>
-        <li>The stops overlap a little to show “layering” (like moments happening close together).</li>
-        <li>The trail is broken into sections so it feels like movement, not a straight list.</li>
-      </ul>
-    </section>
-
-    <section class="sections card">
-      <h2>Stops (short reflections)</h2>
-
-      <article id="home" class="stop">
-        <h3>Home Base</h3>
-        <p>
-          This is the starting point. It’s calm and stable, so it sits at the edge of the map like an anchor.
-        </p>
-      </article>
-
-      <article id="door" class="stop">
-        <h3>Leash + Door</h3>
-        <p>
-          This is a transition zone. It’s closer and slightly overlapped to show “moving out” of one space into another.
-        </p>
-      </article>
-
-      <article id="park" class="stop">
-        <h3>Dog Park</h3>
-        <p>
-          The biggest stop. More space around it so it feels open, like the main area of activity.
-        </p>
-      </article>
-
-      <article id="treats" class="stop">
-        <h3>Treat Station</h3>
-        <p>
-          A small bonus stop that interrupts the path (on purpose). It’s like a pause in the walk.
-        </p>
-      </article>
-
-      <article id="nap" class="stop">
-        <h3>Nap Corner</h3>
-        <p>
-          The end point. It’s lower and quieter to feel like settling down.
-        </p>
-      </article>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 Aisha</p>
-  </footer>
 </body>
 </html>
