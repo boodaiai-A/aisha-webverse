@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simba Screensaver</title>
+
+<link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+<main class="screen">
+
+<div class="rings">
+<div class="ring"></div>
+<div class="ring"></div>
+<div class="ring"></div>
+</div>
+
+<div id="dots"></div>
+
+<div class="simba">SIMBA</div>
+
+</main>
+
+<script>
+
+const container = document.getElementById("dots")
+
+for(let i=0;i<200;i++){
+
+const dot=document.createElement("div")
+dot.className="dot"
+
+dot.style.left=Math.random()*100+"vw"
+dot.style.top=Math.random()*100+"vh"
+
+dot.style.animationDelay=Math.random()*6+"s"
+
+container.appendChild(dot)
+
+}
+
+</script>
+
+</body>
+</html>
