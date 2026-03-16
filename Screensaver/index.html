@@ -1,50 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simba Screensaver</title>
-
-<link rel="stylesheet" href="main.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simba Screensaver</title>
+  <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
 
-<main class="screen">
+  <main class="screen">
 
-<div class="rings">
-<div class="ring"></div>
-<div class="ring"></div>
-<div class="ring"></div>
-</div>
+    <div class="rings">
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+      <div class="ring r3"></div>
+    </div>
 
-<div id="dots"></div>
+    <div class="shape s1"></div>
+    <div class="shape s2"></div>
+    <div class="shape s3"></div>
+    <div class="shape s4"></div>
+    <div class="shape s5"></div>
+    <div class="shape s6"></div>
+    <div class="shape s7"></div>
+    <div class="shape s8"></div>
+    <div class="shape s9"></div>
+    <div class="shape s10"></div>
+    <div class="shape s11"></div>
+    <div class="shape s12"></div>
 
-<div class="simba">SIMBA</div>
+    <div class="center-glow"></div>
+    <h1 class="title">SIMBA</h1>
 
-</main>
-
-<script>
-
-const container = document.getElementById("dots")
-
-for(let i=0;i<200;i++){
-
-const dot=document.createElement("div")
-dot.className="dot"
-
-dot.style.left=Math.random()*100+"vw"
-dot.style.top=Math.random()*100+"vh"
-
-dot.style.animationDelay=Math.random()*6+"s"
-
-container.appendChild(dot)
-
-}
-
-</script>
+  </main>
 
 </body>
 </html>
