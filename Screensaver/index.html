@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Simba Screensaver</title>
-  <link rel="stylesheet" href="main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simba Screensaver</title>
+<link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-<div class="screen">
+<main class="screen">
 
-  <div class="shape s1"></div>
-  <div class="shape s2"></div>
-  <div class="shape s3"></div>
-  <div class="shape s4"></div>
-  <div class="shape s5"></div>
-  <div class="shape s6"></div>
-  <div class="shape s7"></div>
-  <div class="shape s8"></div>
+<div id="stars"></div>
 
-  <div class="glow"></div>
-  <h1 class="title">SIMBA</h1>
-
+<div class="ripple-center">
+<div class="ripple ripple1"></div>
+<div class="ripple ripple2"></div>
+<div class="ripple ripple3"></div>
+<div class="ripple ripple4"></div>
 </div>
+
+<div class="shooting-star" id="shoot"></div>
+
+<div class="glow"></div>
+
+<h1 class="title">SIMBA</h1>
+
+</main>
+
+<script>
+const stars = document.getElementById("stars");
+
+for (let i = 0; i < 120; i++) {
+  const star = document.createElement("div");
+  star.className = "star";
+
+  const size = Math.random() * 8 + 3;
+
+  star.style.width = size + "px";
+  star.style.height = size + "px";
+
+  star.style.left = Math.random() * 100 + "vw";
+  star.style.top = Math.random() * 100 + "vh";
+
+  star.style.animationDelay = Math.random() * 6 + "s";
+  star.style.animationDuration = 3 + Math.random() * 4 + "s";
+
+  stars.appendChild(star);
+}
+
+const shoot = document.getElementById("shoot");
+
+function randomShoot() {
+  shoot.style.animation = "none";
+
+  setTimeout(() => {
+    shoot.style.animation = "shoot 2.8s ease-out forwards";
+  }, 20);
+
+  const next = Math.random() * 9000 + 7000;
+  setTimeout(randomShoot, next);
+}
+
+randomShoot();
+</script>
 
 </body>
 </html>
