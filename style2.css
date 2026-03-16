@@ -1,78 +1,73 @@
-* {
-  box-sizing: border-box;
+*{
+  box-sizing:border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+html,body{
+  margin:0;
+  padding:0;
 }
 
-body {
-  background: #000;
-  color: white;
-  font-family: Georgia, serif;
+body{
+  background:#000;
+  color:white;
+  font-family:Georgia, serif;
 }
 
-.container {
-  width: min(900px, 90%);
-  margin: 60px auto;
+.container{
+  width:min(900px,90%);
+  margin:60px auto;
 }
 
-h1 {
-  margin: 0 0 10px 0;
-  font-size: clamp(42px, 7vw, 72px);
-  color: #ff4fb2;
+.title{
+  margin:0 0 10px 0;
+  font-size:clamp(42px,7vw,70px);
+  color:#ff4fb2;
   text-shadow:
-    0 0 10px rgba(255, 79, 178, 0.8),
-    0 0 25px rgba(255, 79, 178, 0.5),
-    0 0 45px rgba(255, 79, 178, 0.3);
+    0 0 10px rgba(255,79,178,0.8),
+    0 0 25px rgba(255,79,178,0.5),
+    0 0 40px rgba(255,79,178,0.3);
 }
 
-.subtitle {
-  margin-bottom: 30px;
-  font-family: Arial, sans-serif;
-  font-size: 22px;
+.subtitle{
+  margin-bottom:30px;
+  font-family:Arial, sans-serif;
+  font-size:20px;
 }
 
-.card {
-  border: 2px solid #333;
-  border-radius: 18px;
-  padding: 24px;
-  margin-bottom: 26px;
-  background: rgba(255, 255, 255, 0.02);
+.card{
+  border:2px solid #333;
+  border-radius:18px;
+  padding:24px;
+  margin-bottom:26px;
+  background:rgba(255,255,255,0.03);
 }
 
-.card h2 {
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-size: 28px;
+.card h2{
+  margin-top:0;
 }
 
 .card p,
-.card li {
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
+.card li{
+  font-family:Arial, sans-serif;
+  line-height:1.5;
 }
 
-ul {
-  padding-left: 24px;
-  margin: 0;
+ul{
+  padding-left:22px;
 }
 
-a {
-  color: #9be7d8;
-  text-decoration: none;
+a{
+  color:#8be0d0;
+  text-decoration:none;
 }
 
-a:hover {
-  color: #ffffff;
-  text-decoration: underline;
+a:hover{
+  color:white;
+  text-decoration:underline;
 }
 
-footer {
-  margin-top: 30px;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #aaa;
+footer{
+  margin-top:30px;
+  font-family:Arial, sans-serif;
+  color:#aaa;
 }
