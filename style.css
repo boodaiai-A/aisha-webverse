@@ -21,11 +21,13 @@ body{
 .title{
   margin:0 0 10px 0;
   font-size:clamp(42px,7vw,70px);
-  color:#ff4fb2;
+  color:#ff66c4;
   text-shadow:
-    0 0 10px rgba(255,79,178,0.8),
-    0 0 25px rgba(255,79,178,0.5),
-    0 0 40px rgba(255,79,178,0.3);
+    0 0 10px #ff66c4,
+    0 0 20px #ff66c4,
+    0 0 40px #ff4fb2,
+    0 0 70px #ff4fb2,
+    0 0 110px rgba(255,79,178,0.85);
 }
 
 .subtitle{
@@ -35,7 +37,7 @@ body{
 }
 
 .card{
-  border:2px solid #333;
+  border:2px solid #444;
   border-radius:18px;
   padding:24px;
   margin-bottom:26px;
@@ -44,12 +46,14 @@ body{
 
 .card h2{
   margin-top:0;
+  font-size:28px;
 }
 
 .card p,
 .card li{
   font-family:Arial, sans-serif;
   line-height:1.5;
+  font-size:18px;
 }
 
 ul{
@@ -57,7 +61,7 @@ ul{
 }
 
 a{
-  color:#8be0d0;
+  color:#9be7d8;
   text-decoration:none;
 }
 
