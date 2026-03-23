@@ -1,57 +1,92 @@
-body{
-background-color:#0e0e14;
-color:#f4f4f4;
-font-family:Arial, Helvetica, sans-serif;
-margin:0;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(255, 0, 140, 0.12), transparent 30%),
+    linear-gradient(to bottom, #090909, #050505);
+  color: #f5f5f5;
 }
 
-.topnav{
-padding:20px;
-background:#111;
-border-bottom:1px solid #333;
+.topnav {
+  padding: 28px 70px 10px 70px;
+  font-size: 18px;
 }
 
-.topnav a{
-color:#fff;
-text-decoration:none;
-margin-right:20px;
-font-weight:bold;
+.topnav a {
+  color: #d8f6c8;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 14px;
 }
 
-.topnav a:hover{
-color:#ff66cc;
+.topnav a:hover {
+  color: #ffffff;
 }
 
-.journal-wrapper{
-max-width:750px;
-margin:60px auto;
-padding:40px;
-background:#181822;
-border-radius:10px;
-box-shadow:0 0 30px rgba(255,0,150,0.15);
+.page {
+  width: 85%;
+  max-width: 1100px;
+  margin: 20px auto 60px auto;
 }
 
-h1{
-margin-top:0;
-font-size:32px;
+h1 {
+  font-size: 72px;
+  margin: 20px 0 40px 0;
+  color: #ff4fc3;
+  text-shadow:
+    0 0 8px #ff4fc3,
+    0 0 20px #ff4fc3,
+    0 0 40px rgba(255, 79, 195, 0.9);
 }
 
-.reading-link{
-margin-bottom:25px;
-color:#ccc;
+.entry-card {
+  background: rgba(30, 30, 30, 0.78);
+  border: 2px solid rgba(255, 210, 235, 0.35);
+  border-radius: 18px;
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  box-shadow:
+    0 0 18px rgba(255, 120, 200, 0.08),
+    inset 0 0 10px rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(2px);
 }
 
-.reading-link a{
-color:#ff66cc;
+.entry-card h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 22px;
+  color: #d8f6c8;
 }
 
-.entry h2{
-margin-top:0;
-color:#ff99dd;
+.entry-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #f2f2f2;
+  margin-bottom: 16px;
 }
 
-.entry p{
-line-height:1.6;
-margin-bottom:18px;
-color:#e2e2e2;
+@media (max-width: 900px) {
+  .topnav {
+    padding: 20px 24px 10px 24px;
+  }
+
+  .page {
+    width: 92%;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  .entry-card {
+    padding: 22px;
+  }
+
+  .entry-card h2 {
+    font-size: 19px;
+  }
+
+  .entry-card p {
+    font-size: 15px;
+  }
 }

@@ -1,14 +1,37 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!doctype html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-  </style>
+  <title>Javascript exercise</title>
+  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
+
+<button onclick="change()">Click me...</button>
+<button onclick="glow()">Make it glow...</button>
+
+<div class="menu">
+  Hello World!
+</div>
+
+<div class="gear"></div>
+
+<script>
+var menu = document.querySelector(".menu");
+var gear = document.querySelector(".gear");
+
+function change() {
+  console.log(":-)");
+  menu.classList.toggle("active");
+  gear.classList.toggle("spin");
+  document.body.classList.toggle("dark");
+}
+
+function glow() {
+  menu.classList.toggle("glow");
+  gear.classList.toggle("glow");
+}
+</script>
+
 </body>
 </html>
