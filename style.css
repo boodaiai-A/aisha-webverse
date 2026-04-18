@@ -1,77 +1,73 @@
-*{
-  box-sizing:border-box;
+body {
+  margin: 0;
+  background-image: url("cff24bfb-0e19-40ee-9790-e3a4d00aaa83.JPG");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #4b3124;
+  font-family: Georgia, serif;
 }
 
-html,body{
-  margin:0;
-  padding:0;
+main {
+  width: 70%;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: rgba(245, 236, 221, 0.85);
+  padding: 40px;
 }
 
-body{
-  background:#000;
-  color:white;
-  font-family:Georgia, serif;
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #5a3928;
 }
 
-.container{
-  width:min(900px,90%);
-  margin:60px auto;
+.intro {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 40px;
 }
 
-.title{
-  margin:0 0 10px 0;
-  font-size:clamp(42px,7vw,70px);
-  color:#ff66c4;
-  text-shadow:
-    0 0 10px #ff66c4,
-    0 0 20px #ff66c4,
-    0 0 40px #ff4fb2,
-    0 0 70px #ff4fb2,
-    0 0 110px rgba(255,79,178,0.85);
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #5a3928;
+  border-bottom: 1px solid #c9b29a;
+  padding-bottom: 5px;
 }
 
-.subtitle{
-  margin-bottom:30px;
-  font-family:Arial, sans-serif;
-  font-size:20px;
+p, li {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.card{
-  border:2px solid #444;
-  border-radius:18px;
-  padding:24px;
-  margin-bottom:26px;
-  background:rgba(255,255,255,0.03);
+ul {
+  padding-left: 25px;
 }
 
-.card h2{
-  margin-top:0;
-  font-size:28px;
+li {
+  margin-bottom: 10px;
 }
 
-.card p,
-.card li{
-  font-family:Arial, sans-serif;
-  line-height:1.5;
-  font-size:18px;
+a {
+  color: #6f9fbe;
+  text-decoration: none;
 }
 
-ul{
-  padding-left:22px;
+a:hover {
+  text-decoration: underline;
 }
 
-a{
-  color:#9be7d8;
-  text-decoration:none;
-}
-
-a:hover{
-  color:white;
-  text-decoration:underline;
-}
-
-footer{
-  margin-top:30px;
-  font-family:Arial, sans-serif;
-  color:#aaa;
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+  color: #6d5649;
 }
