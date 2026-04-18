@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>California Beach Control</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      overflow: hidden;
+      background: #d9edf7;
+    }
+
+    .toolbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 14px 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(255, 248, 238, 0.88);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(112, 82, 58, 0.25);
+    }
+
+    .toolbar button {
+      border: none;
+      background: #f8ecd9;
+      color: #5e4330;
+      padding: 10px 16px;
+      font-size: 18px;
+      font-family: Georgia, serif;
+      border-radius: 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .toolbar button:hover {
+      background: #ecd8bc;
+      transform: translateY(-1px);
+    }
+
+    .scene {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background-image: url("Beach.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+
+    .item {
+      position: absolute;
+      user-select: none;
+      -webkit-user-drag: none;
+      cursor: grab;
+      max-width: none;
+    }
+
+    .item:active {
+      cursor: grabbing;
+    }
+
+    .note {
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      z-index: 1000;
+      background: rgba(255, 248, 238, 0.88);
+      color: #5e4330;
+      padding: 12px 16px;
+      border-radius: 14px;
+      font-size: 20px;
+      line-height: 1.35;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    @media (max-width: 700px) {
+      .toolbar button {
+        font-size: 15px;
+        padding: 8px 12px;
+      }
+
+      .note {
+        font-size: 16px;
+        max-width: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <button onclick="addItem('simba.png', 70)">Simba</button>
+    <button onclick="addItem('moly.png', 50)">Moly</button>
+    <button onclick="addItem('DJ.png', 240)">DJ table</button>
+    <button onclick="addItem('tent.png', 320)">Tent</button>
+    <button onclick="addItem('beach-ball.png', 95)">Beach ball</button>
+    <button onclick="addItem('Life Ring Toy.png', 95)">Ring toy</button>
+    <button onclick="addItem('toys.png', 130)">Beach toys</button>
+    <button onclick="addItem('Sand Castle.png', 180)">Sand castle</button>
+    <button onclick="clearItems()">Reset</button>
+  </div>
+
+  <div class="scene" id="scene"></div>
+
+  <div class="note">
+    click buttons to add objects<br>
+    drag them to build the beach
+  </div>
+
+  <script>
+    const scene = document.getElementById("scene");
+    let highestZ = 1;
+
+    function addItem(src, width) {
+      const img = document.createElement("img");
+      img.src = src;
+      img.className = "item";
+      img.draggable = false;
+      img.style.width = width + "px";
+
+      const maxLeft = window.innerWidth - width - 30;
+      const minTop = 120;
+      const maxTop = window.innerHeight - 220;
+
+      img.style.left = Math.max(20, Math.random() * maxLeft) + "px";
+      img.style.top = Math.max(minTop, Math.random() * maxTop) + "px";
+      img.style.zIndex = highestZ++;
+
+      makeDraggable(img);
+      scene.appendChild(img);
+    }
+
+    function clearItems() {
+      document.querySelectorAll(".item").forEach(item => item.remove());
+    }
+
+    function makeDraggable(element) {
+      let isDragging = false;
+      let offsetX = 0;
+      let offsetY = 0;
+
+      element.addEventListener("mousedown", function(e) {
+        isDragging = true;
+        element.style.zIndex = highestZ++;
+        offsetX = e.clientX - element.offsetLeft;
+        offsetY = e.clientY - element.offsetTop;
+      });
+
+      document.addEventListener("mousemove", function(e) {
+        if (!isDragging) return;
+
+        let x = e.clientX - offsetX;
+        let y = e.clientY - offsetY;
+
+        const maxX = window.innerWidth - element.offsetWidth;
+        const maxY = window.innerHeight - element.offsetHeight;
+
+        if (x < 0) x = 0;
+        if (y < 95) y = 95;
+        if (x > maxX) x = maxX;
+        if (y > maxY) y = maxY;
+
+        element.style.left = x + "px";
+        element.style.top = y + "px";
+      });
+
+      document.addEventListener("mouseup", function() {
+        isDragging = false;
+      });
+
+      element.addEventListener("dragstart", function(e) {
+        e.preventDefault();
+      });
+    }
+  </script>
+
+</body>
+</html>
