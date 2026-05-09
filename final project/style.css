@@ -202,5 +202,5 @@ body {
 
 a,
 a:hover {
-  cursor: url("images/star-cursor.png") 11 11, pointer;
+  cursor: pointer;
 }
